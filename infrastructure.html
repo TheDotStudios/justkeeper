@@ -1,0 +1,1603 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>About Us — Just Keeper</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="css/all.min.css" rel="stylesheet" media="screen" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/mousecursor.css" />
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      .pw-img-side img {
+        border-radius: 10px !important;
+      }
+      .pw-content-side {
+        border-radius: 10px;
+      }
+      .pw {
+        padding: 120px 0 80px;
+      }
+      .about-us-prime .section-footer-text {
+        margin-bottom: 100px;
+      }
+      .about-us-prime {
+        padding-top: 150px;
+      }
+      .image-wrapper img {
+        height: 150px;
+      }
+      .pw-cdesc {
+        line-height: 1.6em;
+        font-size: 16px;
+      }
+      /* My css */
+      .section-title h1 {
+        font-size: 53px;
+      }
+
+      .pw-ctag {
+        font-size: 14px;
+        letter-spacing: 0.07em;
+      }
+      :root {
+        --bd: #18191a;
+        --bg: #ffffff;
+        --bt: #727272;
+        --br: #763235;
+        --bg2: #1839b1;
+        --bdv: rgba(24, 25, 26, 0.1);
+        --fff: "Poppins", sans-serif;
+        --ffd: "Cal Sans", serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        line-height: 50px;
+      }
+      p {
+        font-size: 16px;
+      }
+
+      /* ══ Page Header ══ */
+      .abt-page-header {
+        position: relative;
+        background:
+          linear-gradient(
+            270deg,
+            rgba(24, 25, 26, 0) 0%,
+            rgba(24, 25, 26, 0.82) 60%,
+            rgba(24, 25, 26, 0.95) 100%
+          ),
+          url("https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1600&q=80")
+            center/cover no-repeat;
+        border-radius: 20px;
+        padding: 285px 0 200px;
+        margin: 15px 15px 0;
+        overflow: hidden;
+      }
+      .abt-page-header-box {
+        position: relative;
+        z-index: 2;
+      }
+      .abt-page-header-box .section-sub-title {
+        color: var(--white-color);
+        border-color: var(--dark-divider-color);
+      }
+      .abt-page-header-box .section-sub-title::before {
+        background: var(--accent-secondary-color);
+      }
+      .abt-page-header-box h1 {
+        font-size: 60px;
+        font-weight: 400;
+        color: var(--white-color);
+        font-family: var(--accent-font);
+        margin-bottom: 15px;
+      }
+      .abt-page-header-box .breadcrumb-item,
+      .abt-page-header-box .breadcrumb-item a {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 15px;
+      }
+      .abt-page-header-box .breadcrumb-item + .breadcrumb-item::before {
+        color: rgba(255, 255, 255, 0.4);
+        content: "›";
+      }
+      .abt-page-header-box .breadcrumb-item.active {
+        color: var(--accent-secondary-color);
+      }
+
+      /* ══ Stat Bar ══ */
+      .abt-stat-bar {
+        background: var(--primary-color);
+        border-bottom: 1px solid var(--dark-divider-color);
+        margin: 0 45px;
+        width: calc(100% - 90px);
+        border-radius: 20px;
+        position: relative;
+        bottom: 60px;
+      }
+      .abt-stat-item {
+        padding: 28px 40px;
+        border-right: 1px solid var(--dark-divider-color);
+        text-align: left;
+      }
+      .abt-stat-item:last-child {
+        border-right: none;
+      }
+      .abt-stat-num {
+        font-family: var(--accent-font);
+        font-size: 32px;
+        color: var(--accent-secondary-color);
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      .abt-stat-label {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.45);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      /* ══ Section Base ══ */
+      .abt-section {
+        margin: 30px;
+        border-radius: 10px;
+        padding: 120px 0;
+      }
+      .abt-section-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--primary-color);
+        border: 1px solid var(--divider-color);
+        border-radius: 100px;
+        padding: 6px 16px 6px 28px;
+        margin-bottom: 16px;
+        position: relative;
+      }
+      .abt-section-tag::before {
+        content: "";
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--accent-secondary-color);
+      }
+      .dark-section .abt-section-tag {
+        color: var(--white-color);
+        border-color: var(--dark-divider-color);
+      }
+      .abt-section-title {
+        font-family: var(--accent-font);
+        font-size: 48px;
+        font-weight: 400;
+        color: var(--primary-color);
+        line-height: 1.2;
+        margin-bottom: 16px;
+      }
+      .dark-section .abt-section-title {
+        color: var(--white-color);
+      }
+      .abt-section-desc {
+        font-size: 16px;
+        color: var(--text-color);
+        line-height: 1.7;
+        max-width: 600px;
+      }
+      .dark-section .abt-section-desc {
+        color: rgba(255, 255, 255, 0.55);
+      }
+
+      /* ══ About Intro ══ */
+      .abt-intro {
+        background: var(--bg-color);
+        padding: 80px 0;
+      }
+      .abt-intro-text p {
+        font-size: 16px;
+        color: var(--text-color);
+        line-height: 1.8;
+        margin-bottom: 18px;
+      }
+      .abt-stat-box {
+        margin-top: 40px;
+      }
+      .abt-stat-box h2 {
+        font-family: var(--accent-font);
+        font-size: 72px;
+        color: var(--accent-secondary-color);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .abt-stat-box h3 {
+        font-family: var(--accent-font);
+        font-size: 20px;
+        color: var(--primary-color);
+      }
+      .abt-intro-image {
+        border-radius: 20px;
+        overflow: hidden;
+        height: 100%;
+      }
+      .abt-intro-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        aspect-ratio: 4/3;
+      }
+
+      /* ══ Feature Cards ══ */
+      .abt-feature-card {
+        background: var(--white-color);
+        border-radius: 10px;
+        padding: 36px 32px;
+        border: 1px solid transparent;
+        transition:
+          border-color 0.3s,
+          box-shadow 0.3s,
+          transform 0.3s;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        /* margin-bottom: 30px; */
+      }
+      .abt-feature-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 0;
+        background: var(--accent-secondary-color);
+        transition: height 0.35s ease;
+      }
+      .abt-feature-card:hover::before {
+        height: 100%;
+      }
+      .abt-feature-card:hover {
+        border-color: rgba(193, 154, 91, 0.3);
+        box-shadow: 0 8px 32px rgba(24, 25, 26, 0.08);
+        transform: translateY(-4px);
+      }
+      .abt-fc-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--accent-secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        font-size: 22px;
+        transition: all 0.3s;
+      }
+      .abt-feature-card:hover .abt-fc-icon {
+        background: var(--accent-color);
+      }
+      .abt-fc-title {
+        font-family: var(--accent-font);
+        font-size: 20px;
+        color: var(--primary-color);
+        margin-bottom: 12px;
+        line-height: 1.2;
+      }
+      .abt-fc-text {
+        font-size: 15px;
+        color: var(--text-color);
+        line-height: 1.75;
+        margin: 0;
+      }
+
+      /* ══ Story Section ══ */
+      .abt-story-section {
+        background: var(--white-color);
+      }
+      .abt-story-image {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+      }
+      .abt-story-image img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        aspect-ratio: 3/4;
+      }
+      .abt-story-badge {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        background: var(--accent-secondary-color);
+        border-radius: 14px;
+        padding: 20px 26px;
+        max-width: 220px;
+      }
+      .abt-story-badge h3 {
+        font-family: var(--accent-font);
+        font-size: 32px;
+        color: var(--primary-color);
+        margin-bottom: 4px;
+      }
+      .abt-story-badge p {
+        font-size: 13px;
+        color: var(--primary-color);
+        margin: 0;
+        line-height: 1.4;
+      }
+      .abt-story-list {
+        list-style: none;
+        margin: 24px 0 0;
+        padding: 0;
+      }
+      .abt-story-list li {
+        position: relative;
+        padding-left: 26px;
+        margin-bottom: 14px;
+        font-size: 15px;
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+      .abt-story-list li::before {
+        content: "\f058";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: var(--accent-secondary-color);
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 16px;
+      }
+
+      /* ══ Mission/Vision/Values ══ */
+      .abt-mvv-section {
+        background: var(--primary-color);
+      }
+      .abt-mvv-tab-nav {
+        display: flex;
+        border-bottom: 1px solid var(--dark-divider-color);
+        margin-bottom: 60px;
+      }
+      .abt-mvv-tab-btn {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: var(--accent-font);
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.5);
+        transition:
+          color 0.2s,
+          border-bottom 0.2s;
+        border-bottom: 2px solid transparent;
+      }
+      .abt-mvv-tab-btn.active {
+        color: var(--accent-secondary-color);
+        border-bottom-color: var(--accent-secondary-color);
+      }
+      .abt-mvv-tab-btn i {
+        font-size: 20px;
+      }
+      .abt-mvv-panel {
+        display: none;
+      }
+      .abt-mvv-panel.active {
+        display: flex;
+        gap: 60px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .abt-mvv-content {
+        flex: 1;
+        min-width: 280px;
+      }
+      .abt-mvv-desc {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.8;
+        margin-bottom: 24px;
+      }
+      .abt-mvv-feature {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 14px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 15px;
+      }
+      .abt-mvv-feature i {
+        color: var(--accent-secondary-color);
+        font-size: 16px;
+      }
+      .abt-mvv-image {
+        flex: 0 0 42%;
+      }
+      .abt-mvv-image img {
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        aspect-ratio: 4/3;
+      }
+
+      /* ══ Check Items ══ */
+      .abt-check {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* background: var(--bg-color); */
+        border-radius: 10px;
+        padding: 10px 22px;
+        border: 1px solid var(--divider-color);
+        margin-bottom: 16px;
+      }
+      .abt-check-icon {
+        color: var(--accent-secondary-color);
+        font-size: 18px;
+        margin-top: 1px;
+        flex-shrink: 0;
+      }
+      .abt-check-text {
+        font-size: 15px;
+        color: var(--primary-color);
+        line-height: 1.6;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      /* ══ Team / Hybrid Card ══ */
+      .abt-hybrid-card {
+        background: var(--primary-color);
+        border-radius: 10px;
+        padding: 40px;
+        height: 100%;
+      }
+      .abt-hybrid-label {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent-secondary-color);
+        margin-bottom: 16px;
+      }
+      .abt-hybrid-title {
+        font-family: var(--accent-font);
+        font-size: 26px;
+        color: var(--white-color);
+        margin-bottom: 16px;
+        line-height: 1.3;
+      }
+      .abt-hybrid-desc {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.55);
+        line-height: 1.7;
+        margin-bottom: 28px;
+      }
+      .abt-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .abt-tag {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 20px;
+        padding: 6px 14px;
+      }
+
+      /* ══ Section Image ══ */
+      .abt-section-image {
+        border-radius: 10px;
+        overflow: hidden;
+        /* margin-bottom: 30px; */
+      }
+      .abt-section-image img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        aspect-ratio: 16/7;
+        display: block;
+      }
+
+      /* ══ CTA ══ */
+
+      /* ══ Scroll Reveal ══ */
+      .abt-reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 0.6s ease,
+          transform 0.6s ease;
+      }
+      .abt-reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
+      .abt-reveal-d1 {
+        transition-delay: 0.1s;
+      }
+      .abt-reveal-d2 {
+        transition-delay: 0.2s;
+      }
+      .abt-reveal-d3 {
+        transition-delay: 0.3s;
+      }
+
+      @media (max-width: 991px) {
+        .abt-page-header {
+          border-radius: 0;
+          margin: 0;
+          padding: 170px 0 80px;
+        }
+        .abt-page-header-box h1 {
+          font-size: 44px;
+        }
+        .abt-stat-bar {
+          margin: 0;
+          border-radius: 0;
+          width: 100%;
+        }
+        .abt-stat-item {
+          padding: 20px 24px;
+        }
+        .abt-stat-num {
+          font-size: 26px;
+        }
+        .abt-section {
+          padding: 60px 0;
+          margin: 0;
+          border-radius: 0;
+        }
+        .abt-section-title {
+          font-size: 36px;
+        }
+        .abt-cta-title {
+          font-size: 32px;
+        }
+        .abt-mvv-panel.active {
+          flex-direction: column;
+        }
+        .abt-mvv-image {
+          flex: 0 0 100%;
+        }
+      }
+      @media (max-width: 767px) {
+        .abt-page-header-box h1 {
+          font-size: 32px;
+        }
+        .abt-section-title {
+          font-size: 28px;
+        }
+      }
+
+      .step-card {
+        background-color: #f6f5ed;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 100%;
+      }
+      .step-card-image img {
+        width: 100%;
+        aspect-ratio: 1 / 0.72;
+        object-fit: cover;
+        display: block;
+      }
+      .step-card-body {
+        padding: 30px;
+      }
+      .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: var(--accent-color);
+        color: var(--white-color);
+        font-family: var(--accent-font);
+        font-size: 15px;
+        margin-bottom: 18px;
+      }
+      .step-card-body h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      .step-card-body p {
+        margin: 0;
+      }
+
+      .compliance-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 30px;
+      }
+      .compliance-badge {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--secondary-color);
+        border: 1px solid var(--divider-color);
+        border-radius: 100px;
+        padding: 12px 22px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+      .compliance-badge i {
+        color: var(--accent-secondary-color);
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon"><img src="images/loader.svg" alt="" /></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+      <div class="header-sticky">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <span class="text-white font-bold" style="font-weight: 600"
+                >JUSTKEEPER</span
+              >
+            </a>
+
+            <div class="collapse navbar-collapse main-menu">
+              <div class="nav-menu-wrapper">
+                <ul class="navbar-nav mr-auto" id="menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item submenu">
+                    <a class="nav-link" href="#">Company</a>
+                    <ul>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="infrastructure.html"
+                          >Infrastructure</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="case-studies.html"
+                          >Case Studies</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="products.html">products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="header-btn">
+                <a href="contact.html" class="btn-slide-left-right"
+                  >Explore Our Products</a
+                >
+              </div>
+            </div>
+            <div class="navbar-toggle"></div>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header-box">
+              <h1 class="text-anime-style-3" data-cursor="-opaque">
+                Strong Manufacturing Backbone
+              </h1>
+              <!-- <span class="page-header-tagline wow fadeInUp" data-wow-delay="0.1s">Where Efficiency Meets Quality</span> -->
+              <!-- <h1 class="wow fadeInUp">Strong Manufacturing Backbone</h1> -->
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">/ Company</li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  / Infrastructure
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <div class="about-us-prime">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 abt-reveal">
+            <span class="abt-section-tag">Our Infrastructure</span>
+
+            <h1
+              class="text-anime-style-3"
+              data-cursor="-opaque"
+              style="font-size: 60px"
+            >
+              Built for Consistency. Designed for Scale.
+            </h1>
+          </div>
+          <div class="col-lg-5 abt-reveal" style="margin-top: 60px">
+            <p class="abt-section-desc">
+              Our manufacturing system is thoughtfully structured to deliver
+              consistent quality, scalable production, and reliable timelines
+              for every order. From fabric cutting to final inspection, each
+              stage is aligned to maintain accuracy, speed, and repeatability —
+              the foundation of bulk production and long-term partnerships.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <!-- About Us Info Box Start -->
+            <!-- <div class="about-us-info-box-prime wow fadeInUp" data-wow-delay="0.2s"> -->
+
+            <div class="image-wrapper">
+              <div class="smeta-image">
+                <img src="images/smeta.png" alt="" />
+              </div>
+              <div class="smeta-image">
+                <img src="images/smeta.png" alt="" />
+              </div>
+              <div class="smeta-image">
+                <img src="images/smeta.png" alt="" />
+              </div>
+              <div class="smeta-image">
+                <img src="images/smeta.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+          <!-- About Us Info Box End -->
+
+          <div class="col-lg-12">
+            <!-- Section Footer Text Start -->
+            <div
+              class="section-footer-text section-satisfy-img wow fadeInUp"
+              data-wow-delay="0.2s"
+              style="margin-top: 0px"
+            >
+              <!-- Satisfy Client Images Start -->
+              <div class="satisfy-client-images">
+                <!-- <div class="satisfy-client-image">
+                  <figure class="image-anime">
+                    <img src="images/author-1.jpg" alt="" />
+                  </figure>
+                </div> -->
+                <div class="satisfy-client-image add-more">
+                  <img src="images/icon-phone-white.svg" alt="" />
+                </div>
+              </div>
+              <!-- Satisfy Client Images End -->
+              <p>
+                From raw fibers to refined fabrics -
+                <a href="contact.html"
+                  >sustainability woven into every thread.</a
+                >
+              </p>
+            </div>
+            <!-- Section Footer Text End -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── FEATURE CARDS ─── -->
+    <section class="abt-section" style="background: #f5f5f5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 abt-reveal">
+            <span class="abt-section-tag">What Sets Us Apart</span>
+            <!-- <h1 class="abt-section-title">Precision, People &amp; Partnership</h1> -->
+            <h1
+              class="text-anime-style-3"
+              data-cursor="-opaque"
+              style="font-size: 60px"
+            >
+              Precision, People &amp; Partnership
+            </h1>
+          </div>
+          <div class="col-lg-5 abt-reveal" style="margin-top: 60px">
+            <p class="abt-section-desc">
+              We are equipped to handle mid to large-scale orders with ease —
+              supported by skilled teams, modern machinery, and a wide fabric
+              expertise base.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-0 mt-5">
+          <div class="col-lg-3 col-md-6 abt-reveal">
+            <div class="abt-feature-card">
+              <div class="abt-fc-icon">
+                <i
+                  class="fa-solid fa-award"
+                  style="color: #fff; font-size: 20px"
+                ></i>
+              </div>
+              <div class="abt-fc-title">Precision Driven Processes</div>
+              <p class="abt-fc-text">
+                Every stage of production is engineered for accuracy—from
+                pattern cutting to stitching—ensuring consistency across every
+                batch.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 abt-reveal abt-reveal-d1">
+            <div class="abt-feature-card">
+              <div class="abt-fc-icon">
+                <i
+                  class="fa-solid fa-gears"
+                  style="color: #fff; font-size: 20px"
+                ></i>
+              </div>
+              <div class="abt-fc-title">Modern Machinery</div>
+              <p class="abt-fc-text">
+                Access to 200+ industrial machines with dedicated setups for
+                cutting, stitching, and finishing—capable of running multiple
+                styles in parallel.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 abt-reveal abt-reveal-d2">
+            <div class="abt-feature-card">
+              <div class="abt-fc-icon">
+                <i
+                  class="fa-solid fa-globe"
+                  style="color: #fff; font-size: 18px"
+                ></i>
+              </div>
+              <div class="abt-fc-title">Global Supply Chain</div>
+              <p class="abt-fc-text">
+                Sourcing from leading Indian mills including Arvind and Raymond
+                — scalable capacity built for export-grade standards worldwide.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 abt-reveal abt-reveal-d3">
+            <div class="abt-feature-card">
+              <div class="abt-fc-icon">
+                <i
+                  class="fa-solid fa-people-group"
+                  style="color: #fff; font-size: 18px"
+                ></i>
+              </div>
+              <div class="abt-fc-title">Skilled Workforce</div>
+              <p class="abt-fc-text">
+                250+ skilled professionals with deep expertise across denim,
+                cotton, stretch, and blended fabrics — strong focus on fit
+                accuracy.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Image -->
+        <div class="abt-section-image mt-5 abt-reveal">
+          <img
+            src="images/service-image-4.jpg"
+            alt="Team working in production facility"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Production Workflow Section Start -->
+    <div class="pw" id="pw-root">
+      <div class="pw-inner">
+        <div class="row section-row align-items-center">
+          <div class="col-xl-7">
+            <!-- Section Title Start -->
+            <div class="section-title">
+              <span class="section-sub-title wow fadeInUp"
+                >Production Workflow</span
+              >
+              <!-- <h2 class="text-anime-style-3" data-cursor="-opaque">Real feedback from our partners reflects our commitment to quality, consistency, and reliable delivery.</h2> -->
+              <h1 class="text-anime-style-3" data-cursor="-opaque">
+                Every Garment Moves Through a Structured Process
+              </h1>
+            </div>
+            <!-- Section Title End -->
+          </div>
+
+          <div class="col-xl-5">
+            <!-- Section Content Button Start -->
+            <div class="section-content-btn">
+              <!-- Section Title Content Start -->
+              <div
+                class="section-title-content wow fadeInUp"
+                data-wow-delay="0.2s"
+              >
+                <p>
+                  Every garment moves through a structured, multi-stage process
+                  designed for accuracy, consistency, and efficiency at every
+                  step.
+                </p>
+              </div>
+              <!-- Section Title Content End -->
+
+              <!-- Section Button Start -->
+
+              <!-- Section Button End -->
+            </div>
+            <!-- Section Content Button End -->
+          </div>
+        </div>
+
+        <div class="pw-timeline" id="pw-timeline">
+          <div class="pw-spine"></div>
+          <div class="pw-spine-fill" id="pw-spine-fill"></div>
+
+          <div id="pw-items">
+            <div class="pw-item img-left" id="stage-0">
+              <div class="pw-img-side">
+                <img
+                  src="https://images.unsplash.com/photo-1684695749267-233af13276d0?auto=format&fit=crop&w=900&q=80"
+                  alt="Raw Material Stock"
+                  loading="eager"
+                />
+              </div>
+              <div class="pw-node-col">
+                <div class="pw-dot">
+                  <span class="pw-dot-num">01</span
+                  ><span class="pw-dot-line"></span>
+                </div>
+              </div>
+              <div class="pw-content-side">
+                <span class="pw-bg-num">01</span>
+                <p class="pw-ctag">Stage 01 &mdash; Production</p>
+                <h3 class="pw-ctitle">Raw Material Stock</h3>
+                <p class="pw-cdesc">
+                  Fabric and trims are received, verified, and stored under
+                  organized inventory systems for traceability and quality
+                  control.
+                </p>
+                <div class="pw-cpips">
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <span class="pw-cpip-label">1 / 7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pw-item img-right" id="stage-1">
+              <div class="pw-img-side">
+                <img
+                  src="https://images.unsplash.com/photo-1741183392804-a37864e6a6d9?auto=format&fit=crop&w=900&q=80"
+                  alt="Cutting"
+                  loading="lazy"
+                />
+              </div>
+              <div class="pw-node-col">
+                <div class="pw-dot">
+                  <span class="pw-dot-num">02</span
+                  ><span class="pw-dot-line"></span>
+                </div>
+              </div>
+              <div class="pw-content-side">
+                <span class="pw-bg-num">02</span>
+                <p class="pw-ctag">Stage 02 &mdash; Production</p>
+                <h3 class="pw-ctitle">Cutting</h3>
+                <p class="pw-cdesc">
+                  Precision fabric cutting on dedicated cutting tables using
+                  planned markers to ensure size accuracy, consistency, and
+                  minimal wastage.
+                </p>
+                <div class="pw-cpips">
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <span class="pw-cpip-label">2 / 7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pw-item img-left" id="stage-2">
+              <div class="pw-img-side">
+                <img
+                  src="https://images.unsplash.com/photo-1741183395212-5237420ca763?auto=format&fit=crop&w=900&q=80"
+                  alt="Stitching"
+                  loading="lazy"
+                />
+              </div>
+              <div class="pw-node-col">
+                <div class="pw-dot">
+                  <span class="pw-dot-num">03</span
+                  ><span class="pw-dot-line"></span>
+                </div>
+              </div>
+              <div class="pw-content-side">
+                <span class="pw-bg-num">03</span>
+                <p class="pw-ctag">Stage 03 &mdash; Production</p>
+                <h3 class="pw-ctitle">Stitching</h3>
+                <p class="pw-cdesc">
+                  Skilled operators and industrial setups enable consistent
+                  construction, parallel style execution, and bulk output at
+                  scale.
+                </p>
+                <div class="pw-cpips">
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <span class="pw-cpip-label">3 / 7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pw-item img-right" id="stage-3">
+              <div class="pw-img-side">
+                <img
+                  src="https://images.unsplash.com/photo-1741176503229-08a2af87242c?auto=format&fit=crop&w=900&q=80"
+                  alt="Washing"
+                  loading="lazy"
+                />
+              </div>
+              <div class="pw-node-col">
+                <div class="pw-dot">
+                  <span class="pw-dot-num">04</span
+                  ><span class="pw-dot-line"></span>
+                </div>
+              </div>
+              <div class="pw-content-side">
+                <span class="pw-bg-num">04</span>
+                <p class="pw-ctag">Stage 04 &mdash; Production</p>
+                <h3 class="pw-ctitle">Washing</h3>
+                <p class="pw-cdesc">
+                  Dedicated washing processes deliver the right wash, hand-feel,
+                  and finish across denim and other fabrics, with consistency
+                  across batches.
+                </p>
+                <div class="pw-cpips">
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <span class="pw-cpip-label">4 / 7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pw-item img-left" id="stage-4">
+              <div class="pw-img-side">
+                <img
+                  src="https://images.unsplash.com/photo-1645380672072-43f44d5ee29d?auto=format&fit=crop&w=900&q=80"
+                  alt="Finishing"
+                  loading="lazy"
+                />
+              </div>
+              <div class="pw-node-col">
+                <div class="pw-dot">
+                  <span class="pw-dot-num">05</span
+                  ><span class="pw-dot-line"></span>
+                </div>
+              </div>
+              <div class="pw-content-side">
+                <span class="pw-bg-num">05</span>
+                <p class="pw-ctag">Stage 05 &mdash; Production</p>
+                <h3 class="pw-ctitle">Finishing</h3>
+                <p class="pw-cdesc">
+                  Pressing, trimming, and detailing ensure every garment meets
+                  the required appearance, fit, and measurement standards.
+                </p>
+                <div class="pw-cpips">
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <span class="pw-cpip-label">5 / 7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pw-item img-right" id="stage-5">
+              <div class="pw-img-side">
+                <img
+                  src="https://images.unsplash.com/photo-1741183395212-5237420ca763?auto=format&fit=crop&w=900&q=80"
+                  alt="Quality Check"
+                  loading="lazy"
+                />
+              </div>
+              <div class="pw-node-col">
+                <div class="pw-dot">
+                  <span class="pw-dot-num">06</span
+                  ><span class="pw-dot-line"></span>
+                </div>
+              </div>
+              <div class="pw-content-side">
+                <span class="pw-bg-num">06</span>
+                <p class="pw-ctag">Stage 06 &mdash; Production</p>
+                <h3 class="pw-ctitle">Quality Check</h3>
+                <p class="pw-cdesc">
+                  Multi-stage quality inspection covering construction,
+                  measurements, and finishing, with structured documentation for
+                  every batch.
+                </p>
+                <div class="pw-cpips">
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <span class="pw-cpip-label">6 / 7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pw-item img-left" id="stage-6">
+              <div class="pw-img-side">
+                <img
+                  src="https://images.unsplash.com/photo-1631010231931-d2c396b444ec?auto=format&fit=crop&w=900&q=80"
+                  alt="Dispatch"
+                  loading="lazy"
+                />
+              </div>
+              <div class="pw-node-col">
+                <div class="pw-dot">
+                  <span class="pw-dot-num">07</span
+                  ><span class="pw-dot-line"></span>
+                </div>
+              </div>
+              <div class="pw-content-side">
+                <span class="pw-bg-num">07</span>
+                <p class="pw-ctag">Stage 07 &mdash; Production</p>
+                <h3 class="pw-ctitle">Dispatch</h3>
+                <p class="pw-cdesc">
+                  Final packing and dispatch carried out through organized
+                  systems to ensure on-time delivery and order accuracy.
+                </p>
+                <div class="pw-cpips">
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <div class="pw-pip"></div>
+                  <span class="pw-cpip-label">7 / 7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Production Workflow Section End -->
+
+    <!-- ─── QUALITY & MODEL ─── -->
+    <section class="abt-section" style="background: #f5f5f5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 abt-reveal">
+            <span class="abt-section-tag">Manufacturing Model & Quality</span>
+
+            <h1
+              class="text-anime-style-3"
+              data-cursor="-opaque"
+              style="font-size: 60px"
+            >
+              Quality Built Into Every Stage
+            </h1>
+          </div>
+          <div class="col-lg-5 abt-reveal" style="margin-top: 60px">
+            <p class="abt-section-desc">
+              A hybrid production approach combining structured core systems
+              with aligned capacity — the flexibility to scale without
+              compromising standards.
+            </p>
+          </div>
+        </div>
+
+        <!-- Section Image -->
+
+        <div class="row g-4 mt-4">
+          <div class="col-lg-6">
+            <div class="model-img">
+              <img
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1400&q=80"
+                alt="Quality control in garment factory"
+                style="border-radius: 10px"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 abt-reveal abt-reveal-d2">
+            <div class="abt-hybrid-card">
+              <div class="abt-hybrid-label">Hybrid Production Model</div>
+              <h3 class="abt-hybrid-title">Core Systems + Aligned Capacity</h3>
+              <p class="abt-hybrid-desc">
+                Structured core production paired with aligned units enables
+                seamless scaling — maintaining the same quality standards
+                whether the order is 500 or 50,000 units.
+              </p>
+              <div class="abt-tags">
+                <span class="abt-tag">Scalable Output</span>
+                <span class="abt-tag">Uniform Quality</span>
+                <span class="abt-tag">Flexible Capacity</span>
+                <span class="abt-tag">Repeat-Order Ready</span>
+                <span class="abt-tag">Export-Grade Standards</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-lg-6 abt-reveal">
+            <p
+              style="
+                font-size: 16px;
+                color: var(--text-color);
+                line-height: 1.7;
+                margin-top: 10px;
+              "
+            >
+              We follow a hybrid production approach combining core production
+              through structured systems with additional capacity from aligned
+              production units — giving us the flexibility to scale across order
+              volumes while maintaining uniform quality standards.
+            </p>
+            <div class="header-btn">
+              <a href="contact.html" class="btn-slide-left-right"
+                >Explore Our Products</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="abt-check">
+              <i class="fa-solid fa-circle-check abt-check-icon"></i>
+              <p class="abt-check-text">
+                Multi-stage quality checks from cutting to finishing
+              </p>
+            </div>
+            <div class="abt-check">
+              <i class="fa-solid fa-circle-check abt-check-icon"></i>
+              <p class="abt-check-text">
+                Dedicated inspection processes before dispatch
+              </p>
+            </div>
+            <div class="abt-check">
+              <i class="fa-solid fa-circle-check abt-check-icon"></i>
+              <p class="abt-check-text">
+                Consistency maintained across batches and repeat orders
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ─── -->
+    <section class="abt-cta-section">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8 abt-reveal">
+            <h2 class="abt-cta-title">Ready to Partner with Just Keeper?</h2>
+            <p class="abt-cta-sub">
+              Tell us your requirements — we'll handle the rest with precision
+              and care.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end abt-reveal abt-reveal-d2">
+            <a href="contact.html" class="abt-cta-btn"
+              >Start a Conversation <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer-gold bg-section dark-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div class="footer-header-gold">
+              <div class="section-title">
+                <h1 class="text-anime-style-3" data-cursor="-opaque">
+                  Looking for a quality denim products?
+                </h1>
+              </div>
+              <div class="contact-us-circle-gold">
+                <a href="contact.html"
+                  ><img src="images/contact-us-circle-gold.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5">
+            <div class="about-footer-gold">
+              <div class="footer-logo-gold">
+                <!-- <img src="images/logo.svg" alt="" /> -->
+              </div>
+              <div class="about-footer-content-gold">
+                <p>
+                  Partner with JUST KEEPER and experience dependable garment
+                  manufacturing backed by industry expertise and a track record
+                  of consistent quality.
+                </p>
+              </div>
+              <div class="footer-social-links-gold">
+                <h2>Follow On Social:</h2>
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7">
+            <div class="footer-links-box-gold">
+              <div class="footer-links-gold">
+                <h2>Quick Links</h2>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="infrastructure.html">Infrastructure</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="footer-links-gold">
+                <h2>Our Services</h2>
+                <ul>
+                  <li>Trademark Registered Brand</li>
+                  <li>Secure Payments</li>
+                  <li>Premium Denim Quality</li>
+                  <li>Pan India &amp; Export Shipping</li>
+                  <li>Quality Checked Products</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-12">
+            <div class="footer-copyright-gold">
+              <div class="footer-copyright-text-gold">
+                <p>Copyright © 2026 All Rights Reserved.</p>
+              </div>
+              <div class="footer-contact-item-list-gold">
+                <ul>
+                  <li>
+                    <img
+                      src="images/icon-phone-accent-secondary.svg"
+                      alt=""
+                    /><a href="tel:123456789">+123456789</a>
+                  </li>
+                  <li>
+                    <img src="images/icon-mail-accent-secondary.svg" alt="" /><a
+                      href="mailto:info@domainname.com"
+                      >tds@domainname.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/function.js"></script>
+
+    <script>
+      // Scroll reveal
+      const revealObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".abt-reveal")
+        .forEach((el) => revealObs.observe(el));
+
+      // MVV Tabs
+      document.querySelectorAll(".abt-mvv-tab-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".abt-mvv-tab-btn")
+            .forEach((b) => b.classList.remove("active"));
+          document
+            .querySelectorAll(".abt-mvv-panel")
+            .forEach((p) => p.classList.remove("active"));
+          btn.classList.add("active");
+          document
+            .getElementById("abt-panel-" + btn.dataset.panel)
+            .classList.add("active");
+        });
+      });
+    </script>
+
+    <script>
+      // Scroll-driven activation. No wheel hijacking, no debounce delay —
+      // IntersectionObserver fires natively as the page scrolls, so there's
+      // no lag and the browser's own scroll handling is left untouched.
+      const items = Array.from(document.querySelectorAll(".pw-item"));
+      const timeline = document.getElementById("pw-timeline");
+      const spineFill = document.getElementById("pw-spine-fill");
+      const DOT_RADIUS = 34; // dot radius (24) + ring (10) — keeps the line off the ring too
+
+      // Light up pips 0..idx for the active stage; full row for completed stages
+      function setPips(itemEl, idx, state) {
+        const pips = itemEl.querySelectorAll(".pw-pip");
+        pips.forEach((pip, j) => {
+          pip.classList.remove("done", "active");
+          if (state === "done") {
+            pip.classList.add("done");
+          } else if (state === "active") {
+            if (j <= idx) pip.classList.add(j === idx ? "active" : "done");
+          }
+        });
+      }
+
+      let activeIndex = -1;
+
+      function updateSpine() {
+        if (activeIndex === -1) {
+          spineFill.style.height = "0px";
+          return;
+        }
+        const activeEl = items[activeIndex];
+        const tlRect = timeline.getBoundingClientRect();
+        const elRect = activeEl.getBoundingClientRect();
+        const dotCenter = elRect.top - tlRect.top + elRect.height / 2;
+        spineFill.style.height = Math.max(0, dotCenter - DOT_RADIUS) + "px";
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const idx = items.indexOf(entry.target);
+            if (entry.isIntersecting) {
+              activeIndex = idx;
+            }
+          });
+
+          items.forEach((el, j) => {
+            el.classList.remove("active", "done");
+            if (j === activeIndex) {
+              el.classList.add("active");
+              setPips(el, j, "active");
+            } else if (j < activeIndex) {
+              el.classList.add("done");
+              setPips(el, j, "done");
+            } else {
+              setPips(el, j, "idle");
+            }
+          });
+
+          updateSpine();
+        },
+        {
+          root: null,
+          rootMargin: "-45% 0px -45% 0px", // triggers when an item crosses viewport center
+          threshold: 0,
+        },
+      );
+
+      items.forEach((el) => observer.observe(el));
+
+      // Keep the spine line glued to the active dot on resize, with rAF so
+      // it never lags behind a fast scroll/resize.
+      let ticking = false;
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (!ticking) {
+            requestAnimationFrame(() => {
+              updateSpine();
+              ticking = false;
+            });
+            ticking = true;
+          }
+        },
+        { passive: true },
+      );
+      window.addEventListener("resize", updateSpine);
+    </script>
+  </body>
+</html>
