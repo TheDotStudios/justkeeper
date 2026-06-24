@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="Denim Jeans - JUST KEEPER. Crafted for everyday wear — strong fabrics, modern fits, and commercial-grade construction.">
+  <title>Denim Jeans – Crafted for Everyday Wear | Just Keeper</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <!-- SlickNav -->
+  <link href="css/slicknav.min.css" rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- Font Awesome -->
+  <link href="css/all.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Animate -->
+  <link href="css/animate.css" rel="stylesheet">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Mouse Cursor -->
+  <link rel="stylesheet" href="css/mousecursor.css">
+  <!-- Main Custom CSS -->
+  <link href="css/custom.css" rel="stylesheet" media="screen">
+
+  <style>
+.page-header {
+
+    padding: 185px 0 100px !important;
+  
+}
+
+    /* ---- 1. Product Hero ---------------------------------------- */
+    .pd-hero {
+      padding: 100px 0 80px;
+      background: #fff;
+    }
+
+    /* Thumbnail rail */
+    .pd-thumbs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 80px;
+      flex-shrink: 0;
+    }
+    .pd-thumb {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border-color 0.25s;
+      flex-shrink: 0;
+    }
+    .pd-thumb.active,
+    .pd-thumb:hover { border-color: var(--accent-color); }
+    .pd-thumb img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Main image */
+    .pd-main-img-wrap {
+      flex: 1;
+      border-radius: 20px;
+      overflow: hidden;
+      /* background: #F5F5F5; */
+      position: relative;
+      /* min-height: 540px; */
+    }
+    .pd-main-img-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.35s ease;
+    }
+    .pd-badge {
+      position: absolute;
+      top: 20px; left: 20px;
+      background: var(--accent-color);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+    }
+
+    /* Gallery column layout */
+    .pd-gallery-col {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    /* Info column */
+    .pd-info-col {
+      padding-left: 20px;
+    }
+    .pd-category-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      border: 1px solid var(--divider-color);
+      border-radius: 100px;
+      padding: 5px 16px 5px 28px;
+      margin-bottom: 18px;
+      position: relative;
+    }
+    .pd-category-tag::before {
+      content: '';
+      position: absolute;
+      left: 12px; top: 50%;
+      transform: translateY(-50%);
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--accent-secondary-color);
+    }
+
+    .pd-product-name {
+      font-family: var(--accent-font);
+      font-size: 46px;
+      color: var(--primary-color);
+      line-height: 1.12;
+      margin-bottom: 12px;
+    }
+
+    .pd-rating-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .pd-stars { color: #f5a623; font-size: 13px; letter-spacing: 2px; }
+    .pd-rating-text { font-size: 13px; color: var(--text-color); }
+
+    .pd-short-desc {
+      font-size: 15px;
+      color: var(--text-color);
+      line-height: 1.75;
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--divider-color);
+    }
+
+    /* Fabric chips */
+    .pd-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+    .pd-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .pd-chip {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--primary-color);
+      border: 1.5px solid var(--divider-color);
+      border-radius: 8px;
+      padding: 8px 18px;
+      cursor: pointer;
+      transition: all 0.25s;
+      background: #fff;
+    }
+    .pd-chip:hover,
+    .pd-chip.active {
+      border-color: var(--accent-color);
+      background: var(--accent-color);
+      color: #fff;
+    }
+
+    /* Colour swatches */
+    .pd-swatch-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .pd-swatch {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid transparent;
+      box-shadow: 0 0 0 2px transparent;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .pd-swatch:hover,
+    .pd-swatch.active {
+      box-shadow: 0 0 0 2px var(--accent-color);
+      border-color: #fff;
+    }
+
+    /* MOQ strip */
+    .pd-moq-strip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #F5F5F5;
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-bottom: 28px;
+    }
+    .pd-moq-strip i { color: var(--accent-secondary-color); font-size: 18px; }
+    .pd-moq-text { font-size: 14px; color: var(--primary-color); font-weight: 500; }
+    .pd-moq-text span { color: var(--accent-secondary-color); font-weight: 600; }
+
+    /* Action buttons */
+    .pd-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .pd-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--primary-color);
+      color: #fff;
+      border-radius: 100px;
+      padding: 16px 36px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+      font-family: var(--default-font);
+    }
+    .pd-btn-primary:hover { background: var(--accent-secondary-color); color: #fff; }
+    .pd-btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--primary-color);
+      border-radius: 100px;
+      padding: 16px 36px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      border: 1.5px solid var(--primary-color);
+      cursor: pointer;
+      font-family: var(--default-font);
+    }
+    .pd-btn-outline:hover {
+      background: var(--primary-color);
+      color: #fff;
+    }
+
+    /* Trust row */
+    .pd-trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--divider-color);
+    }
+    .pd-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-color);
+    }
+    .pd-trust-item i {
+      color: var(--accent-color);
+      font-size: 16px;
+    }
+
+    /* ---- 2. Specification Tabs ---------------------------------- */
+    .pd-tabs-section {
+      padding: 80px 0;
+      background: #F5F5F5;
+    }
+    .pd-tab-nav {
+      display: flex;
+      gap: 0;
+      border-bottom: 2px solid var(--divider-color);
+      margin-bottom: 48px;
+      /* overflow-x: auto; */
+    }
+    .pd-tab-btn {
+        /* font-family: var(--accent-font); */
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    background: none;
+    border: none;
+    padding: 16px 28px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.25s;
+    }
+    .pd-tab-btn::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      height: 2px;
+      background: var(--accent-color);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    .pd-tab-btn.active,
+    .pd-tab-btn:hover { color: var(--primary-color); }
+    .pd-tab-btn.active::after { transform: scaleX(1); }
+
+    .pd-tab-panel { display: none; }
+    .pd-tab-panel.active { display: block; }
+
+    /* Spec table */
+    .pd-spec-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 1px solid var(--divider-color);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .pd-spec-row {
+      display: contents;
+    }
+    .pd-spec-key,
+    .pd-spec-val {
+      padding: 16px 24px;
+      font-size: 14px;
+      border-bottom: 1px solid var(--divider-color);
+    }
+    .pd-spec-key {
+      font-weight: 600;
+      color: var(--primary-color);
+      background: #fff;
+    }
+    .pd-spec-val {
+      color: var(--text-color);
+      background: #fafafa;
+    }
+    .pd-spec-key:last-of-type,
+    .pd-spec-val:last-of-type { border-bottom: none; }
+
+    /* Size chart */
+    .pd-size-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    .pd-size-table th {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 12px 18px;
+      text-align: left;
+      font-weight: 500;
+      font-family: var(--default-font);
+    }
+    .pd-size-table td {
+      padding: 12px 18px;
+      color: var(--text-color);
+      border-bottom: 1px solid var(--divider-color);
+    }
+    .pd-size-table tr:last-child td { border-bottom: none; }
+    .pd-size-table tr:nth-child(even) td { background: #F5F5F5; }
+
+    /* Features panel */
+    .pd-features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .pd-feature-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid var(--divider-color);
+      padding: 28px 24px;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .pd-feature-card:hover {
+      box-shadow: 0 12px 40px rgba(24,25,26,0.08);
+      transform: translateY(-4px);
+    }
+    .pd-feature-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      background: #F5F5F5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .pd-feature-icon i {
+      font-size: 20px;
+      color: var(--accent-color);
+    }
+    .pd-feature-title {
+      font-family: var(--accent-font);
+      font-size: 17px;
+      color: var(--primary-color);
+      margin-bottom: 8px;
+    }
+    .pd-feature-desc {
+      font-size: 13.5px;
+      color: var(--text-color);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ---- 3. Fabric & Finish Section ----------------------------- */
+    .pd-fabric-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .pd-fabric-visual {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 520px;
+    }
+    .pd-fabric-visual img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .pd-fabric-float {
+      position: absolute;
+      bottom: 28px; left: 28px; right: 28px;
+      background: rgba(24,25,26,0.82);
+      backdrop-filter: blur(8px);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .pd-fabric-float-stat {
+      flex: 1;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+    .pd-fabric-float-stat:last-child { border-right: none; }
+    .pd-fabric-float-num {
+      font-family: var(--accent-font);
+      font-size: 26px;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .pd-fabric-float-label {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+    }
+
+    .pd-fabric-info { padding-left: 20px; }
+    .pd-fabric-list {
+      list-style: none;
+      padding: 0; margin: 0 0 28px;
+    }
+    .pd-fabric-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--divider-color);
+      font-size: 14.5px;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    .pd-fabric-list li:last-child { border-bottom: none; }
+    .pd-fabric-list li i {
+      color: var(--accent-color);
+      font-size: 16px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    .pd-fabric-list li strong {
+      display: block;
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 2px;
+    }
+
+    /* ---- 4. Production Process --------------------------------- */
+    .pd-process-section {
+      padding: 100px 0 100px;
+      /* background: #F5F5F5; */
+    }
+    .pd-process-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .pd-process-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px; left: 10%; right: 10%;
+      height: 1px;
+      background: var(--divider-color);
+      z-index: 0;
+    }
+    .pd-process-step {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .pd-step-circle {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: #fff;
+      border: 1.5px solid var(--divider-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      transition: all 0.3s;
+      position: relative;
+    }
+    .pd-process-step:hover .pd-step-circle {
+      background: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    .pd-process-step:hover .pd-step-circle i { color: #fff; }
+    .pd-step-circle i {
+      font-size: 20px;
+      color: var(--accent-color);
+      transition: color 0.3s;
+    }
+    .pd-step-num {
+      position: absolute;
+      top: -6px; right: -6px;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      background: var(--accent-color);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pd-step-label {
+
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    }
+    .pd-step-sub {
+      font-size: 16px;
+      color: var(--text-color);
+      /* line-height: 1.5; */
+    }
+
+    /* ---- 5. Related Products ------------------------------------ */
+    .pd-related-section {
+      padding: 0px 0 150px;
+      background: #fff;
+    }
+    .pd-related-card {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--divider-color);
+      background: #fff;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .pd-related-card:hover {
+      box-shadow: 0 16px 48px rgba(24,25,26,0.1);
+      transform: translateY(-6px);
+    }
+    .pd-related-img {
+      height: 260px;
+      overflow: hidden;
+    }
+    .pd-related-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .pd-related-card:hover .pd-related-img img { transform: scale(1.06); }
+    .pd-related-body {
+      padding: 20px 22px 22px;
+    }
+    .pd-related-cat {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-secondary-color);
+      margin-bottom: 6px;
+    }
+    .pd-related-name {
+      font-family: var(--accent-font);
+      font-size: 20px;
+      color: var(--primary-color);
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .pd-related-desc {
+      font-size: 13px;
+      color: var(--text-color);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .pd-related-link {
+      font-family: var(--accent-font);
+      font-size: 14px;
+      color: var(--primary-color);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: gap 0.25s;
+    }
+    .pd-related-link:hover { gap: 14px; color: var(--accent-secondary-color); }
+    .pd-related-link i {
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: var(--accent-color);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      transition: background 0.25s;
+    }
+    .pd-related-link:hover i { background: var(--accent-secondary-color); }
+
+    /* ---- 6. CTA Banner ------------------------------------------ */
+    .pd-cta-section {
+      padding: 80px 0;
+      background: var(--primary-color);
+      position: relative;
+      overflow: hidden;
+    }
+    .pd-cta-section::before {
+      content: 'JUSTKEEPER';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      font-family: var(--accent-font);
+      font-size: 180px;
+      color: rgba(255,255,255,0.03);
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+    }
+    .pd-cta-inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+    .pd-cta-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 100px;
+      padding: 5px 16px 5px 28px;
+      margin-bottom: 24px;
+      position: relative;
+    }
+    .pd-cta-tag::before {
+      content: '';
+      position: absolute;
+      left: 12px; top: 50%;
+      transform: translateY(-50%);
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--accent-secondary-color);
+    }
+    .pd-cta-title {
+      font-family: var(--accent-font);
+      font-size: 52px;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .pd-cta-sub {
+      font-size: 16px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 40px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pd-cta-btns {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .pd-cta-btn-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      color: var(--primary-color);
+      border-radius: 100px;
+      padding: 16px 40px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      font-family: var(--default-font);
+    }
+    .pd-cta-btn-white:hover {
+      background: var(--accent-secondary-color);
+      color: #fff;
+    }
+    .pd-cta-btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: #fff;
+      border-radius: 100px;
+      padding: 16px 40px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      border: 1.5px solid rgba(255,255,255,0.3);
+      font-family: var(--default-font);
+    }
+    .pd-cta-btn-ghost:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.6);
+      color: #fff;
+    }
+
+    /* ---- Responsive -------------------------------------------- */
+    @media (max-width: 991px) {
+      .pd-product-name { font-size: 34px; }
+      .pd-info-col { padding-left: 0; margin-top: 40px; }
+      .pd-features-grid { grid-template-columns: repeat(2, 1fr); }
+      .pd-process-steps { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+      .pd-process-steps::before { display: none; }
+      .pd-cta-title { font-size: 38px; }
+    }
+    @media (max-width: 767px) {
+      .pd-hero { padding: 40px 0 60px; }
+      .pd-thumbs { flex-direction: row; width: 100%; overflow-x: auto; }
+      .pd-thumb { flex-shrink: 0; }
+      .pd-gallery-col { flex-direction: column; }
+      .pd-main-img-wrap { min-height: 340px; }
+      .pd-features-grid { grid-template-columns: 1fr; }
+      .pd-process-steps { grid-template-columns: repeat(2, 1fr); }
+      .pd-spec-grid { grid-template-columns: 1fr; }
+      .pd-spec-key { border-bottom: none; }
+      .pd-fabric-visual { height: 300px; }
+      .pd-cta-title { font-size: 30px; }
+      .pd-cta-section::before { font-size: 80px; }
+      .pd-tab-btn { padding: 14px 16px; font-size: 13px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Preloader Start -->
+  <div class="preloader">
+    <div class="loading-container">
+      <div class="loading"></div>
+      <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- ======================= HEADER (identical to all pages) ======================= -->
+  <header class="main-header">
+    <div class="header-sticky">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <span class="text-white font-bold" style="font-weight:600; font-size:25px">JUSTKEEPER</span>
+          </a>
+          <div class="collapse navbar-collapse main-menu">
+            <div class="nav-menu-wrapper">
+              <ul class="navbar-nav mr-auto" id="menu">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="#">Company</a>
+                  <ul>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="infrastructure.html">Infrastructure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="header-btn">
+              <a href="contact.html" class="btn-slide-left-right" style="margin-right:30px">Explore Our Products</a>
+            </div>
+          </div>
+          <div class="navbar-toggle"></div>
+        </div>
+      </nav>
+      <div class="responsive-menu"></div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- ======================= PAGE HEADER (breadcrumb) ============================= -->
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-header-box">
+            <h1 class="wow fadeInUp">Crafted for Everyday Wear</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="products.html">/ Products</a></li>
+              <li class="breadcrumb-item active" aria-current="page">/ Denim Jeans Detail</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= SECTION 1 — PRODUCT HERO ============================ -->
+  <div class="pd-hero">
+    <div class="container">
+      <div class="row">
+
+        <!-- Gallery Column -->
+        <div class="col-lg-7">
+          <div class="pd-gallery-col">
+
+            <!-- Thumbnails -->
+            <div class="pd-thumbs" id="pdThumbs">
+              <div class="pd-thumb active" data-img="images/justkeeper-denimjacket-01.png">
+                <img src="images/justkeeper-denimjacket-01.png" alt="Denim Jeans Front">
+              </div>
+              <div class="pd-thumb" data-img="images/justkeeper-denimjacket-02.png">
+                <img src="images/justkeeper-denimjacket-02.png" alt="Denim Jeans Side">
+              </div>
+              <div class="pd-thumb" data-img="images/justkeeper-denimjacket-03.png">
+                <img src="images/justkeeper-denimjacket-03.png" alt="Denim Jeans Back">
+              </div>
+              <!-- <div class="pd-thumb" data-img="https://images.unsplash.com/photo-1591210283937-97d36c83ae1c?auto=format&fit=crop&w=900&q=80">
+                <img src="https://images.unsplash.com/photo-1591210283937-97d36c83ae1c?auto=format&fit=crop&w=200&q=80" alt="Denim Detail">
+              </div> -->
+            </div>
+
+            <!-- Main Image -->
+            <div class="pd-main-img-wrap">
+              <span class="pd-badge">New Arrival</span>
+              <img id="pdMainImg" src="images/justkeeper-denimjacket-01.png" alt="Classic Slim-Fit Denim Jeans">
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Info Column -->
+        <div class="col-lg-5">
+          <div class="pd-info-col">
+
+            <span class="pd-category-tag">Denim Jeans</span>
+
+            <h1 class="pd-product-name">Denim Jeans</h1>
+
+            <div class="pd-rating-row">
+              <span class="pd-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="pd-rating-text">4.9 &nbsp;·&nbsp; 240+ Buyer Reviews</span>
+            </div>
+
+            <p class="pd-short-desc">
+              Our denim jeans are designed for everyday durability and comfort, using strong fabrics from leading mills and modern fits that balance style with practicality. Each piece is built to maintain shape and quality through regular use.
+            </p>
+
+            <!-- Fit Type -->
+            <p class="pd-label">Available Fits</p>
+            <div class="pd-chip-row" id="pdSizes">
+              <span class="pd-chip active">Slim</span>
+              <span class="pd-chip">Regular</span>
+              <span class="pd-chip">Comfort</span>
+            </div>
+
+            <!-- Wash / Colour -->
+            <p class="pd-label">Wash Finish</p>
+            <div class="pd-chip-row">
+              <span class="pd-chip active">Classic Wash</span>
+              <span class="pd-chip">Contemporary Wash</span>
+              <span class="pd-chip">Custom</span>
+            </div>
+
+            <!-- MOQ -->
+            <div class="pd-moq-strip">
+              <i class="fa-solid fa-boxes-stacked"></i>
+              <p class="pd-moq-text">Minimum Order Quantity: <span>500 pcs / style</span> &nbsp;·&nbsp; Custom MOQ on request</p>
+            </div>
+
+            <!-- Actions -->
+            <div class="pd-actions">
+              <a href="contact.html" class="pd-btn-primary">
+                <i class="fa-solid fa-paper-plane"></i> Request a Quote
+              </a>
+              <a href="contact.html" class="pd-btn-outline">
+                <i class="fa-solid fa-flask"></i> Request Sample
+              </a>
+            </div>
+
+            <!-- Trust signals -->
+            <div class="pd-trust-row">
+              <div class="pd-trust-item">
+                <i class="fa-solid fa-certificate"></i>
+                <span>OEM / ODM Ready</span>
+              </div>
+              <div class="pd-trust-item">
+                <i class="fa-solid fa-ship"></i>
+                <span>Pan-India & Export</span>
+              </div>
+              <div class="pd-trust-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Quality Checked</span>
+              </div>
+              <div class="pd-trust-item">
+                <i class="fa-solid fa-tag"></i>
+                <span>Private Label</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Section 1 End -->
+
+  <!-- ======================= SECTION 2 — SPECIFICATION TABS ====================== -->
+  <!-- <div class="pd-tabs-section bg-section">
+    <div class="container">
+
+      <div class="pd-tab-nav" role="tablist">
+        <button class="pd-tab-btn active" data-tab="features">Product Features</button>
+        <button class="pd-tab-btn" data-tab="specs">Specifications</button>
+        <button class="pd-tab-btn" data-tab="sizes">Size Chart</button>
+        <button class="pd-tab-btn" data-tab="care">Care Instructions</button>
+      </div>
+      <div class="pd-tab-panel active" id="tab-features">
+        <div class="pd-features-grid">
+          <div class="pd-feature-card wow fadeInUp">
+            <div class="pd-feature-icon"><i class="fa-solid fa-droplet"></i></div>
+            <h4 class="pd-feature-title">Classic & Contemporary Washes</h4>
+            <p class="pd-feature-desc">Available in a range of classic and contemporary washes — from timeless indigo tones to modern finishes suited for organised retail and export markets.</p>
+          </div>
+          <div class="pd-feature-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="pd-feature-icon"><i class="fa-solid fa-link"></i></div>
+            <h4 class="pd-feature-title">Strong Seam Construction</h4>
+            <p class="pd-feature-desc">Reinforced seams and stress-point bartacking throughout — built to maintain structural integrity through regular wear and repeated washing cycles.</p>
+          </div>
+          <div class="pd-feature-card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="pd-feature-icon"><i class="fa-solid fa-store"></i></div>
+            <h4 class="pd-feature-title">Commercial Fits for Organised Retail</h4>
+            <p class="pd-feature-desc">Fit standards aligned with organised retail requirements — consistent grading and silhouettes that work across chain store, multi-brand, and e-commerce contexts.</p>
+          </div>
+          <div class="pd-feature-card wow fadeInUp" data-wow-delay="0.3s">
+            <div class="pd-feature-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+            <h4 class="pd-feature-title">Slim, Regular & Comfort Options</h4>
+            <p class="pd-feature-desc">Three distinct fit profiles available — slim for a tapered silhouette, regular for classic everyday wear, and comfort for a relaxed, easy fit with practical roominess.</p>
+          </div>
+          <div class="pd-feature-card wow fadeInUp" data-wow-delay="0.4s">
+            <div class="pd-feature-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h4 class="pd-feature-title">Strong Fabrics from Leading Mills</h4>
+            <p class="pd-feature-desc">Fabric sourced from reputed Indian mills known for consistent weight, weave quality, and colourfastness — ensuring every batch matches the approved standard.</p>
+          </div>
+          <div class="pd-feature-card wow fadeInUp" data-wow-delay="0.5s">
+            <div class="pd-feature-icon"><i class="fa-solid fa-tag"></i></div>
+            <h4 class="pd-feature-title">Private Label Ready</h4>
+            <p class="pd-feature-desc">Custom woven labels, hangtags, and inner branding applied per buyer specification. Suitable for private label programs and brand-owned collections.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pd-tab-panel" id="tab-specs">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="pd-spec-grid">
+              <div class="pd-spec-key">Fabric Composition</div>
+              <div class="pd-spec-val">98% Cotton, 2% Elastane</div>
+              <div class="pd-spec-key">Fabric Weight</div>
+              <div class="pd-spec-val">12 oz / sq yd (ring-spun)</div>
+              <div class="pd-spec-key">Fit Type</div>
+              <div class="pd-spec-val">Slim Fit, Mid Rise</div>
+              <div class="pd-spec-key">Rise</div>
+              <div class="pd-spec-val">Mid Rise (10.5")</div>
+              <div class="pd-spec-key">Fly Type</div>
+              <div class="pd-spec-val">5-button fly</div>
+              <div class="pd-spec-key">Pocket Style</div>
+              <div class="pd-spec-val">5-pocket classic</div>
+            </div>
+          </div>
+          <div class="col-lg-6" style="margin-top: 0;">
+            <div class="pd-spec-grid">
+              <div class="pd-spec-key">Available Sizes</div>
+              <div class="pd-spec-val">28 – 40 (custom on request)</div>
+              <div class="pd-spec-key">Wash Finishes</div>
+              <div class="pd-spec-val">5 standard + custom</div>
+              <div class="pd-spec-key">MOQ</div>
+              <div class="pd-spec-val">500 pcs / style / colour</div>
+              <div class="pd-spec-key">Lead Time</div>
+              <div class="pd-spec-val">30 – 45 days post-sample</div>
+              <div class="pd-spec-key">Certifications</div>
+              <div class="pd-spec-val">OEKO-TEX, REACH, BIS</div>
+              <div class="pd-spec-key">Packaging</div>
+              <div class="pd-spec-val">Poly-bag / custom retail pack</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pd-tab-panel" id="tab-sizes">
+        <div style="overflow-x:auto; border-radius:16px; border: 1px solid var(--divider-color);">
+          <table class="pd-size-table">
+            <thead>
+              <tr>
+                <th>Size (Waist)</th>
+                <th>Waist (inches)</th>
+                <th>Hip (inches)</th>
+                <th>Thigh (inches)</th>
+                <th>Inseam (inches)</th>
+                <th>Leg Opening</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>28</td><td>28"</td><td>36"</td><td>22"</td><td>30"</td><td>13"</td></tr>
+              <tr><td>30</td><td>30"</td><td>38"</td><td>23"</td><td>31"</td><td>13.5"</td></tr>
+              <tr><td>32</td><td>32"</td><td>40"</td><td>24"</td><td>31"</td><td>14"</td></tr>
+              <tr><td>34</td><td>34"</td><td>42"</td><td>25"</td><td>32"</td><td>14.5"</td></tr>
+              <tr><td>36</td><td>36"</td><td>44"</td><td>26"</td><td>32"</td><td>15"</td></tr>
+              <tr><td>38</td><td>38"</td><td>46"</td><td>27"</td><td>32"</td><td>15.5"</td></tr>
+              <tr><td>40</td><td>40"</td><td>48"</td><td>28"</td><td>32"</td><td>16"</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:13px; color:var(--text-color); margin-top:16px;"><i class="fa-solid fa-circle-info" style="color:var(--accent-color);"></i> &nbsp; Measurements are approximate. Custom sizing available on bulk orders. Contact us for grading specifications.</p>
+      </div>
+
+      <div class="pd-tab-panel" id="tab-care">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 style="font-family:var(--accent-font); font-size:22px; margin-bottom:20px; color:var(--primary-color);">Washing & Care</h4>
+            <ul class="pd-fabric-list">
+              <li><i class="fa-solid fa-check-circle"></i><div><strong>Machine Wash Cold</strong>Use cold water (30°C max) on a gentle cycle to preserve colour and fabric integrity.</div></li>
+              <li><i class="fa-solid fa-check-circle"></i><div><strong>Turn Inside Out</strong>Always turn jeans inside out before washing to minimise surface abrasion and fade.</div></li>
+              <li><i class="fa-solid fa-check-circle"></i><div><strong>Mild Detergent Only</strong>Use colour-safe, phosphate-free detergent. Avoid bleach and fabric softeners on denim.</div></li>
+              <li><i class="fa-solid fa-check-circle"></i><div><strong>Air Dry Preferred</strong>Hang dry in shade. If tumble drying, use low heat to prevent shrinkage beyond 2%.</div></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h4 style="font-family:var(--accent-font); font-size:22px; margin-bottom:20px; color:var(--primary-color);">Storage & Handling</h4>
+            <ul class="pd-fabric-list">
+              <li><i class="fa-solid fa-check-circle"></i><div><strong>Fold, Don't Hang Long-Term</strong>Prolonged hanging can stretch the waistband. Fold and stack for bulk storage.</div></li>
+              <li><i class="fa-solid fa-check-circle"></i><div><strong>Cool, Dry Storage</strong>Store in a cool, well-ventilated area away from direct sunlight and moisture.</div></li>
+              <li><i class="fa-solid fa-check-circle"></i><div><strong>Iron Medium Heat</strong>Iron at medium temperature (150°C) on the reverse side. Avoid ironing pockets.</div></li>
+              <li><i class="fa-solid fa-check-circle"></i><div><strong>Do Not Dry Clean</strong>Dry cleaning solvents can strip the denim's natural oils and distort the wash finish.</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="pd-process-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-7">
+          <span class="abt-section-tag">How It's Made</span>
+          <h2 class="text-anime-style-3" data-cursor="-opaque" style="font-family:var(--accent-font); font-size:48px; color:var(--primary-color); margin-top:10px;">From Loom to Label — End to End</h2>
+        </div>
+        <div class="col-lg-5" style="display:flex; align-items:flex-end;">
+          <p style="color:var(--text-color); font-size:15px; line-height:1.7; margin-bottom:0;">Every pair goes through five quality-controlled production stages before it reaches your warehouse — zero outsourcing, full traceability.</p>
+        </div>
+      </div>
+
+      <div class="pd-process-steps">
+        <div class="pd-process-step wow fadeInUp">
+          <div class="pd-step-circle">
+            <span class="pd-step-num">1</span>
+            <i class="fa-solid fa-swatchbook"></i>
+          </div>
+          <p class="pd-step-label">Fabric Sourcing</p>
+          <p class="pd-step-sub">Certified mill selection, GSM & tensile testing, colour consistency check</p>
+        </div>
+        <div class="pd-process-step wow fadeInUp" data-wow-delay="0.1s">
+          <div class="pd-step-circle">
+            <span class="pd-step-num">2</span>
+            <i class="fa-solid fa-pencil-ruler"></i>
+          </div>
+          <p class="pd-step-label">Pattern & Grading</p>
+          <p class="pd-step-sub">CAD-generated patterns graded across full size run per buyer spec</p>
+        </div>
+        <div class="pd-process-step wow fadeInUp" data-wow-delay="0.2s">
+          <div class="pd-step-circle">
+            <span class="pd-step-num">3</span>
+            <i class="fa-solid fa-cut"></i>
+          </div>
+          <p class="pd-step-label">Cutting & Bundling</p>
+          <p class="pd-step-sub">Computerised spreading and cutting with ±1mm tolerance</p>
+        </div>
+        <div class="pd-process-step wow fadeInUp" data-wow-delay="0.3s">
+          <div class="pd-step-circle">
+            <span class="pd-step-num">4</span>
+            <i class="fa-solid fa-person-digging"></i>
+          </div>
+          <p class="pd-step-label">Sewing & Assembly</p>
+          <p class="pd-step-sub">In-line quality inspection at every 50-piece interval</p>
+        </div>
+        <div class="pd-process-step wow fadeInUp" data-wow-delay="0.4s">
+          <div class="pd-step-circle">
+            <span class="pd-step-num">5</span>
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <p class="pd-step-label">Wash, Finish & Pack</p>
+          <p class="pd-step-sub">Final AQL audit, pressing, labelling, and custom retail packaging</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- ======================= SECTION 5 — RELATED PRODUCTS ======================== -->
+  <div class="pd-related-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-8">
+          <span class="abt-section-tag">Our Collections</span>
+          <h2 class="text-anime-style-3" data-cursor="-opaque" style="font-family:var(--accent-font); font-size:48px; color:var(--primary-color); margin-top:10px;">More From Just Keeper</h2>
+        </div>
+        <div class="col-lg-4" style="display:flex; align-items:flex-end; justify-content:flex-end;">
+          <a href="products.html" class="readmore-btn" style="white-space:nowrap;">View All Products</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 wow fadeInUp">
+          <div class="pd-related-card">
+            <div class="pd-related-img">
+              <img src="images/service-image-2.jpg" alt="Cargo Pants">
+            </div>
+            <div class="pd-related-body">
+              <p class="pd-related-cat">Cargo Pants</p>
+              <h3 class="pd-related-name">Cargo Pants</h3>
+              <p class="pd-related-desc">Functional, comfortable, and versatile — utility-driven design with a modern aesthetic. Built for ease of movement while maintaining a clean, stylish look ideal for daily wear.</p>
+              <a href="#" class="pd-related-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.15s">
+          <div class="pd-related-card">
+            <div class="pd-related-img">
+              <img src="images/justkeeper-denimjacket-01.png" alt="Denim Jacket">
+            </div>
+            <div class="pd-related-body">
+              <p class="pd-related-cat">Denim Jackets</p>
+              <h3 class="pd-related-name">Denim Jackets</h3>
+              <p class="pd-related-desc">Crafted for stylish layering. Durable fabrics, timeless silhouettes, and construction built to last across seasons.</p>
+              <a href="#" class="pd-related-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="pd-related-card">
+            <div class="pd-related-img">
+              <img src="images/justkeeper-denimjacket-02.png" alt="Custom & Private Label">
+            </div>
+            <div class="pd-related-body">
+              <p class="pd-related-cat">Custom & Private Label</p>
+              <h3 class="pd-related-name">Private Label Development</h3>
+              <p class="pd-related-desc">Flexible solutions from design through bulk production — private label manufacturing, custom apparel development, fabric sourcing, and sampling support.</p>
+              <a href="contact.html" class="pd-related-link">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======================= FOOTER (identical to all pages) ====================== -->
+  <footer class="main-footer-gold bg-section dark-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <div class="footer-header-gold">
+            <div class="section-title">
+              <h1 class="text-anime-style-3" data-cursor="-opaque">Looking for quality denim products?</h1>
+            </div>
+            <div class="contact-us-circle-gold">
+              <a href="contact.html"><img src="images/contact-us-circle-gold.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-5">
+          <div class="about-footer-gold">
+            <div class="footer-logo-gold"></div>
+            <div class="about-footer-content-gold">
+              <p>Partner with JUST KEEPER and experience dependable garment manufacturing backed by industry expertise and a track record of consistent quality.</p>
+            </div>
+            <div class="footer-social-links-gold">
+              <h2>Follow On Social:</h2>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-7">
+          <div class="footer-links-box-gold">
+            <div class="footer-links-gold">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-gold">
+              <h2>Our Services</h2>
+              <ul>
+                <li>Trademark Registered Brand</li>
+                <li>Secure Payments</li>
+                <li>Premium Denim Quality</li>
+                <li>Pan India & Export Shipping</li>
+                <li>Quality Checked Products</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-12">
+          <div class="footer-copyright-gold">
+            <div class="footer-copyright-text-gold">
+              <p>Copyright © 2026 All Rights Reserved.</p>
+            </div>
+            <div class="footer-contact-item-list-gold">
+              <ul>
+                <li>
+                  <img src="images/icon-phone-accent-secondary.svg" alt=""><a href="tel:123456789">+123456789</a>
+                </li>
+                <li>
+                  <img src="images/icon-mail-accent-secondary.svg" alt=""><a href="mailto:info@domainname.com">tds@domainname.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- ======================= SCRIPTS ============================================= -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/validator.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="js/parallaxie.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/magiccursor.js"></script>
+  <script src="js/SplitText.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/function.js"></script>
+
+  <script>
+    /* ------ Thumbnail image switcher ------ */
+    const thumbs = document.querySelectorAll('.pd-thumb');
+    const mainImg = document.getElementById('pdMainImg');
+
+    thumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        thumbs.forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+        mainImg.style.opacity = '0';
+        setTimeout(() => {
+          mainImg.src = thumb.dataset.img;
+          mainImg.style.opacity = '1';
+        }, 200);
+      });
+    });
+
+    /* ------ Size chip selector ------ */
+    document.querySelectorAll('#pdSizes .pd-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('#pdSizes .pd-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+      });
+    });
+
+    /* ------ Colour swatch selector ------ */
+    document.querySelectorAll('#pdSwatches .pd-swatch').forEach(sw => {
+      sw.addEventListener('click', () => {
+        document.querySelectorAll('#pdSwatches .pd-swatch').forEach(s => s.classList.remove('active'));
+        sw.classList.add('active');
+      });
+    });
+
+    /* ------ Tab switching ------ */
+    document.querySelectorAll('.pd-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.pd-tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.pd-tab-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
