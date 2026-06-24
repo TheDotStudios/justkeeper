@@ -488,8 +488,8 @@ a:focus {
 }
 p {
   font-size: 18px;
-  /* line-height: 140%; */
-  letter-spacing: -0.04em;
+  line-height: 140%;
+  /* letter-spacing: -0.04em; */
   /* text-align: justify; */
 }
 .max-width-800px {
@@ -4063,11 +4063,11 @@ header.main-header .header-sticky.active {
 }
 
 .post-entry blockquote p {
-  font-family: var(--accent-font);
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.4em;
-  color: var(--primary-color);
+     /* font-family: var(--accent-font); */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4em;
+    color: var(--primary-color);
 }
 
 .post-entry blockquote p:last-child {
@@ -4840,7 +4840,209 @@ header.main-header .header-sticky.active {
 .page-faqs .page-single-faqs:last-child {
   margin-bottom: 0px;
 }
-
+ .jk-contact-section {
+    padding: 150px 40px;
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    min-height: 600px;
+    box-sizing: border-box;
+  }
+  .jk-left-col {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    gap: 30px;
+  }
+  .jk-image-box {
+    flex: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 260px;
+    background: #c5bfb3 url('../images/justkeeper-denimjacket-02.png') center/cover no-repeat;
+  }
+  .jk-map-box {
+    margin-top: 16px;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 200px;
+    background: #d4d0c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .jk-map-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  .jk-right-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .jk-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .jk-eyebrow-bar {
+    width: 4px;
+    height: 22px;
+    background: #1839b1;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .jk-eyebrow-bar + .jk-eyebrow-bar {
+    opacity: 0.45;
+  }
+  .jk-eyebrow-text {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #5a5a5a;
+  }
+  .jk-heading {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1e1e1e;
+    line-height: 1.2;
+    margin: 0 0 14px;
+  }
+  .jk-subtext {
+    font-size: 16px;
+    /* color: #5a5a5a;
+    line-height: 1.65; */
+    margin: 0 0 24px;
+    max-width: 480px;
+  }
+  .jk-form-box {
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 22px 22px 18px;
+  }
+  .jk-form-row {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .jk-field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+  }
+  .jk-field-group.jk-full {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  .jk-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #5a5a5a;
+  }
+  .jk-input,
+  .jk-textarea {
+    background: #ebebeb;
+    border: 1.5px solid transparent;
+    border-radius: 10px;
+    padding: 11px 14px;
+    font-size: 14px;
+    color: #1e1e1e;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+    font-family: inherit;
+  }
+  .jk-input::placeholder,
+  .jk-textarea::placeholder {
+    color: #c0c0c0;
+  }
+  .jk-input:focus,
+  .jk-textarea:focus {
+    border-color: #1839b1;
+  }
+  .jk-textarea {
+    resize: none;
+    height: 110px;
+  }
+  .jk-submit-btn {
+    width: 100%;
+    background: #1839b1;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-family: inherit;
+    letter-spacing: 0.02em;
+    transition: background 0.2s;
+  }
+  /* .jk-submit-btn:hover {
+    background: #b89540;
+  } */
+  .jk-social-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .jk-social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .jk-social-icon:hover {
+    background: #1839b1;
+  }
+  .jk-social-icon svg {
+    width: 18px;
+    height: 18px;
+    fill: #6b6b6b;
+  }
+  .jk-social-icon:hover svg{
+    fill: #fff;
+  }
+  .jk-contact-info {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.jk-info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #3a3a3a;
+  font-weight: 500;
+}
+.jk-info-item svg {
+  width: 15px;
+  height: 15px;
+  fill: #1839b1;
+  flex-shrink: 0;
+}
 /************************************/
 /***    31. Contact Us Page css   ***/
 /************************************/
@@ -7933,7 +8135,7 @@ header.main-header.header-gold .main-menu ul ul li a:focus {
 }
 
 .our-testimonials-gold {
-  padding: 120px 0;
+  padding: 150px 0;
 }
 
 .testimonial-image-box-gold {
@@ -9734,7 +9936,7 @@ header.main-header.header-gold .main-menu ul ul li a:focus {
 }
 
 .about-us-prime {
-  padding: 120px 0 0 0;
+  padding: 150px 0 50px 0;
 }
 
 .about-us-prime .get-in-touch-circle-prime {
@@ -12180,7 +12382,8 @@ header.main-header.header-gold .main-menu ul ul li a:focus {
 
 .our-services-gold {
   position: relative;
-  background-image: url("https://html.awaikenthemes.com/yarnex/images/our-story-bg-prime.jpg");
+  /* background-image: url("https://html.awaikenthemes.com/yarnex/images/our-story-bg-prime.jpg"); */
+  background-image: url("../images/justkeeper-whyus.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12710,7 +12913,7 @@ header.main-header.header-gold .main-menu ul ul li a:focus {
   background-repeat: no-repeat;
   background-position: bottom -30px right -40px;
   background-size: auto;
-  padding: 120px 0;
+  padding: 150px 0;
 }
 
 .about-section .section-row .section-title.section-title-center {
@@ -12784,7 +12987,8 @@ header.main-header.header-gold .main-menu ul ul li a:focus {
 
 .about-stat-box h2 {
   display: inline-block;
-  background: url("../images/team-3.jpg");
+  /* background: url("../images/team-3.jpg"); */
+  background: url("../images/justkeeper-manufacturing-unit-01.png");
   background-size: cover;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -13123,15 +13327,15 @@ header.main-header.header-gold .main-menu ul ul li a:focus {
 }
 .fp2-nav {
   display: flex;
-  gap: 30px;
+  gap: 7px;
   align-items: center;
 }
 .fp2-btn {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  border: 1.5px solid #d0d0d0;
-  background: #fff;
+    border: 1.5px solid #ebebeb;
+    background: #ebebeb;
   cursor: pointer;
   font-size: 17px;
   color: #444;
@@ -13241,25 +13445,26 @@ header.main-header.header-gold .main-menu ul ul li a:focus {
 .fp2-link {
   font-size: 12px;
   font-weight: 700;
-  color: #c9960a;
+  /* color: #c9960a; */
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  border-bottom: 1.5px solid #c9960a;
+  border-bottom: 1.5px solid #fff;
   padding-bottom: 1px;
 }
 .fp2-link:hover {
-  color: #f0c030;
-  border-color: #f0c030;
+  color: #fff;
+  border-color: #fff;
 }
 
 .abt-section {
   margin: 30px;
   border-radius: 10px;
-  padding: 120px 0;
+  padding: 150px 0;
 }
 .abt-section-tag {
   display: inline-flex;
