@@ -147,6 +147,12 @@
 .pd-btn-primary {
     padding: 10px 10px !important;
     font-size: 13px !important;
+    width: 50%;
+}
+.pd-btn-outline {
+    padding: 10px 25px !important;
+    font-size: 13px !important;
+    width: 50%;
 }
 .sm-gap-20px{
     gap: 20px !important;
@@ -385,12 +391,19 @@ gap: 10px !important;
     color: #fff;
     background: #1839b1;
     border-radius: 5px;
-    padding: 10px 50px 10px 15px;
+    padding: 10px 40px 10px 10px;
     font-size: 13px;
     text-decoration: none;
     overflow: hidden;
     transition: color 0.4s ease;
     z-index: 1;
+}
+.pd-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap !important;
+    margin-bottom: 28px;
+    width: 100%;
 }
     .hero-info-box-prime {
         padding: 0;
