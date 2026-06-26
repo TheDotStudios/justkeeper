@@ -38,6 +38,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 	<style>
+		@media screen and (max-width: 600px) {
+    .page-header {
+        padding: 130px 0 50px !important;
+        border-radius: 0;
+        margin: 0;
+    }
+}
 		.section-title {
     position: relative;
     z-index: 99;
@@ -45,7 +52,7 @@
 }
 		.page-header {
 
-    padding: 185px 0 100px !important;
+    padding: 185px 0 100px ;
   
 }
 		/* ---- Page-specific helpers (Contact Us) ---- */
@@ -162,7 +169,7 @@
 
 <section class="jk-contact-section" aria-label="Contact Just Keeper">
   <div class="jk-left-col">
-    <div class="section-title">
+    <div class="section-title sm-mb-0px">
       <span class="section-sub-title">Contact Us</span>
       <h1 class="text-effect" data-cursor="-opaque" aria-label="Get in Touch">Get in Touch</h1>
     </div>
