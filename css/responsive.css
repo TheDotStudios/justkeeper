@@ -83,6 +83,98 @@
     padding: 34px 25px 34px 25px !important;
     height: 100%;
 }
+.post-entry h3 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.post-entry ul {
+    padding: 0;
+    margin: 10px 0 10px;
+    padding-left: 20px;
+}
+    .post-entry blockquote {
+        padding: 65px 20px 20px 20px;
+        margin-top: 25px !important;
+    }
+.post-entry h3 {
+        font-size: 26px;
+        margin-top: 0;
+        line-height: 1.2 !important;
+        margin-bottom: 0;
+    }
+    .post-entry ol li, .post-entry ul li {
+    margin-bottom: 5px;
+    font-size: 15px !important;
+}
+.case-solution {
+    font-size: 15px !important;
+    color: #302e2e;
+    font-weight: 500 !important;
+    /* opacity: 30%; */
+}
+.abt-cta-title {
+    font-family: var(--accent-font);
+    font-size: 32px !important;
+    color: var(--primary-color);
+    line-height: 1.2 !important;
+    margin-bottom: 8px;
+}
+.industries-contact-box .icon-box img {
+        max-width: 18px !important;
+    }
+        .industries-contact-box .icon-box {
+        width: 30px;
+        height: 30px;
+    }
+    .industries-contact-box-content p {
+    margin: 0;
+}
+.industries-contact-box-content h3 {
+        font-size: 15px;
+        line-height: 1 !important;
+    }
+    .pd-gallery-col {
+        flex-direction: column-reverse !important;
+    }   
+    .pd-category-tag {
+    margin-bottom: 0px !important;
+    position: relative;
+}
+    .pd-hero {
+        padding: 70px 0 60px !important;
+    }
+.pd-btn-primary {
+    padding: 10px 10px !important;
+    font-size: 13px !important;
+}
+.sm-gap-20px{
+    gap: 20px !important;
+}
+.pd-related-card{
+    height: auto !important;
+}
+.pd-related-body {
+    padding: 20px 15px 18px !important;
+}
+.pd-moq-text {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.jk-contact-section {
+    padding: 70px 0px !important;
+    display: flex;
+    gap: 30px !important;
+    align-items: self-start;
+    min-height: 600px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.jk-left-col{
+    width:100% !important;
+}
 .abt-cta-sub {
     font-size: 16px;
     margin-bottom: 0;
@@ -109,7 +201,7 @@
 }
     .section-title h1 {
             font-size: 26px !important;
-        line-height: 1.2 !important;
+        line-height: 1 !important;
         margin-bottom: 10px !important;
 }
     .our-team {
@@ -443,7 +535,7 @@ margin-bottom: 20px;
 .abt-section-desc {
     font-size: 16px;
     color: var(--text-color);
-    line-height: 1.8;
+    line-height: 1.7;
     margin-bottom: 0;
     max-width: 600px;
 }

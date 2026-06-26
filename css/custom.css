@@ -1506,7 +1506,8 @@ header.main-header .header-sticky.active {
 }
 
 .industries-contact-box-content h3 {
-  font-size: 22px;
+    font-size: 22px;
+    line-height: 1;
 }
 
 .industries-contact-box-content h3 a {
