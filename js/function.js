@@ -423,9 +423,10 @@
 
   var lastScrollY = window.scrollY;
   var ticking = false;
+  var DELTA = 6; // ignore tiny scroll jitters below this amount
 
   function onScroll() {
-    var currentScrollY = window.scrollY;
+    var currentScrollY = Math.max(0, window.scrollY);
 
     // Glass effect on all screens
     if (currentScrollY > 20) {
@@ -441,9 +442,16 @@
       return;
     }
 
-    if (currentScrollY > lastScrollY && currentScrollY > 80) {
+    var diff = currentScrollY - lastScrollY;
+
+    // Ignore tiny jitter (momentum/rubber-band noise) so it doesn't flicker
+    if (Math.abs(diff) < DELTA) {
+      return;
+    }
+
+    if (diff > 0 && currentScrollY > 80) {
       header.classList.add("mobile-hide");
-    } else if (currentScrollY < lastScrollY) {
+    } else if (diff < 0) {
       header.classList.remove("mobile-hide");
     }
 
