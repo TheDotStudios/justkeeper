@@ -416,7 +416,7 @@
     });
   }
 })(jQuery);
-// ---- Navbar glass effect on scroll (all screens) + hide/show on scroll (mobile only) ----
+// ---- Navbar glass effect + hide/show on scroll (all screens) ----
 (function () {
   var header = document.querySelector(".header-sticky");
   if (!header) return;
@@ -428,23 +428,16 @@
   function onScroll() {
     var currentScrollY = Math.max(0, window.scrollY);
 
-    // Glass effect on all screens
+    // Glass effect
     if (currentScrollY > 20) {
       header.classList.add("mobile-scrolled");
     } else {
       header.classList.remove("mobile-scrolled");
     }
 
-    // Hide/show only on mobile
-    if (window.innerWidth > 600) {
-      header.classList.remove("mobile-hide");
-      lastScrollY = currentScrollY;
-      return;
-    }
-
     var diff = currentScrollY - lastScrollY;
 
-    // Ignore tiny jitter (momentum/rubber-band noise) so it doesn't flicker
+    // Ignore tiny jitter so it doesn't flicker
     if (Math.abs(diff) < DELTA) {
       return;
     }
