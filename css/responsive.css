@@ -716,3 +716,7 @@ header.main-header .header-sticky.mobile-scrolled {
     transform: translateY(-100%);
   }
 }
+
+header.main-header .header-sticky {
+  will-change: transform, background;
+}
