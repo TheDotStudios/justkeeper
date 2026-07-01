@@ -685,6 +685,19 @@
     max-height: 300px;
   }
 }
+/* ---- Glass effect on scroll: all screens ---- */
+header.main-header .header-sticky {
+  transition:
+    background 0.3s ease-in-out,
+    backdrop-filter 0.3s ease-in-out;
+}
+header.main-header .header-sticky.mobile-scrolled {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ---- Hide/show on scroll: mobile only ---- */
 @media screen and (max-width: 600px) {
   header.main-header {
     position: fixed;
@@ -701,10 +714,5 @@
   }
   header.main-header .header-sticky.mobile-hide {
     transform: translateY(-100%);
-  }
-  header.main-header .header-sticky.mobile-scrolled {
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
   }
 }
