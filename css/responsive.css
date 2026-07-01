@@ -720,3 +720,9 @@ header.main-header .header-sticky.mobile-scrolled {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
+header.main-header .header-sticky .navbar {
+  transition: padding 0.3s ease-in-out;
+}
+header.main-header .header-sticky.mobile-scrolled .navbar {
+  padding: 15px 0px;
+}
