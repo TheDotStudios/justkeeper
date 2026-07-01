@@ -8,7 +8,11 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
     <title>Infrastructure — Just Keeper</title>
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" /> -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/logo/New Project.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -47,6 +51,31 @@
       }
       .image-wrapper img {
         height: 150px;
+      }
+      /* ---- Infrastructure images: mobile-only auto slider ---- */
+      .image-wrapper-mobile-slider {
+        display: none;
+      }
+      @media screen and (max-width: 600px) {
+        .image-wrapper.image-wrapper-desktop {
+          display: none !important;
+        }
+        .image-wrapper-mobile-slider {
+          display: block;
+          width: 100%;
+          overflow: hidden;
+        }
+        .image-wrapper-mobile-slider .swiper-slide {
+          width: 50% !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .image-wrapper-mobile-slider .swiper-slide img {
+          height: 130px !important;
+          width: auto;
+          max-width: 100%;
+        }
       }
       .pw-cdesc {
         line-height: 1.6em;
@@ -684,11 +713,8 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container">
             <a class="navbar-brand" href="index.html">
-              <span class="text-white font-bold" style="font-weight: 600"
-                >JUSTKEEPER</span
-              >
+              <img src="images/logo/main-resize.png" alt="" />
             </a>
-
             <div class="collapse navbar-collapse main-menu">
               <div class="nav-menu-wrapper">
                 <ul class="navbar-nav mr-auto" id="menu">
@@ -761,7 +787,7 @@
     </div>
     <!-- Page Header End -->
 
-    <div class="about-us-prime sm-pt-70px">
+    <div class="about-us-prime sm-pt-50px">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 abt-reveal">
@@ -790,7 +816,7 @@
             <!-- About Us Info Box Start -->
             <!-- <div class="about-us-info-box-prime wow fadeInUp" data-wow-delay="0.2s"> -->
 
-            <div class="image-wrapper">
+            <div class="image-wrapper image-wrapper-desktop">
               <div class="smeta-image">
                 <img src="images/smeta.png" alt="" />
               </div>
@@ -802,6 +828,24 @@
               </div>
               <div class="smeta-image">
                 <img src="images/smeta.png" alt="" />
+              </div>
+            </div>
+
+            <!-- Mobile-only auto slider: shows 2 images by default, auto-slides through the rest -->
+            <div class="image-wrapper-mobile-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide smeta-image">
+                  <img src="images/smeta.png" alt="" />
+                </div>
+                <div class="swiper-slide smeta-image">
+                  <img src="images/smeta.png" alt="" />
+                </div>
+                <div class="swiper-slide smeta-image">
+                  <img src="images/smeta.png" alt="" />
+                </div>
+                <div class="swiper-slide smeta-image">
+                  <img src="images/smeta.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -1281,7 +1325,7 @@
                 alt="Quality control in garment factory"
                 style="border-radius: 10px"
               /> -->
-               <img
+              <img
                 src="./images/jk-infrastructure-manufacturing.png"
                 alt="Quality control in garment factory"
                 style="border-radius: 10px"
@@ -1451,7 +1495,7 @@
               <div class="footer-copyright-text-gold">
                 <p>Copyright © 2026 All Rights Reserved.</p>
               </div>
-               <div class="footer-contact-item-list-gold">
+              <div class="footer-contact-item-list-gold">
                 <ul>
                   <li>
                     <img
@@ -1608,6 +1652,22 @@
         { passive: true },
       );
       window.addEventListener("resize", updateSpine);
+    </script>
+
+    <!-- Infrastructure images: mobile-only auto slider init -->
+    <script>
+      new Swiper(".image-wrapper-mobile-slider", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        speed: 600,
+        observer: true,
+        observeParents: true,
+      });
     </script>
   </body>
 </html>
