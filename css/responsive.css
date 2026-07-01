@@ -685,3 +685,26 @@
     max-height: 300px;
   }
 }
+@media screen and (max-width: 600px) {
+  header.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  header.main-header .header-sticky {
+    transition:
+      transform 0.3s ease-in-out,
+      background 0.3s ease-in-out,
+      backdrop-filter 0.3s ease-in-out;
+  }
+  header.main-header .header-sticky.mobile-hide {
+    transform: translateY(-100%);
+  }
+  header.main-header .header-sticky.mobile-scrolled {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
