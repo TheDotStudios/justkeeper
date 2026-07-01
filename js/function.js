@@ -416,7 +416,7 @@
     });
   }
 })(jQuery);
-// ---- Mobile navbar: hide on scroll down, show on scroll up (with glass effect) ----
+// ---- Navbar glass effect on scroll (all screens) + hide/show on scroll (mobile only) ----
 (function () {
   var header = document.querySelector(".header-sticky");
   if (!header) return;
@@ -425,19 +425,20 @@
   var ticking = false;
 
   function onScroll() {
-    if (window.innerWidth > 600) {
-      header.classList.remove("mobile-hide", "mobile-scrolled");
-      lastScrollY = window.scrollY;
-      return;
-    }
-
     var currentScrollY = window.scrollY;
 
-    // Glass effect only once scrolled past the top
+    // Glass effect on all screens
     if (currentScrollY > 20) {
       header.classList.add("mobile-scrolled");
     } else {
       header.classList.remove("mobile-scrolled");
+    }
+
+    // Hide/show only on mobile
+    if (window.innerWidth > 600) {
+      header.classList.remove("mobile-hide");
+      lastScrollY = currentScrollY;
+      return;
     }
 
     if (currentScrollY > lastScrollY && currentScrollY > 80) {
